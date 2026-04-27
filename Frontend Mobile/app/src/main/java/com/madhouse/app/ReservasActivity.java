@@ -213,7 +213,7 @@ public class ReservasActivity extends AppCompatActivity {
 
         DatePickerDialog dpd = new DatePickerDialog(this, (view, year, month, dayOfMonth) -> {
             // Guardamos la fecha en formato YYYY-MM-DD para el backend
-            fechaSeleccionada = year + "-" + (month + 1) + "-" + dayOfMonth;
+            String fechaReserva = String.format(java.util.Locale.getDefault(), "%04d-%02d-%02d", year, (month + 1), dayOfMonth);
             actualizarInterfaz(); // Redibujamos para que aparezcan las horas
         }, año, mes, dia);
 
