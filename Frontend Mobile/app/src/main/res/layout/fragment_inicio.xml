@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estilo y Elegancia en Cada Corte"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descubre la experiencia única de Madhouse Barbería. Donde la tradición se encuentra con el estilo moderno."
+            android:textAlignment="center"
+            android:textColor="#888888"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnReservarCita"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="RESERVA TU CITA AHORA"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C69C3B"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"/>
+
+        <ImageView
+            android:id="@+id/imgBannerInicio"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Banner de bienvenida"
+            android:scaleType="centerCrop"
+            android:src="@drawable/barberia" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobre Nosotros"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvVerMas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Mas"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#C69C3B"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgBannerSobreNosotros"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/barberia2"
+            android:scaleType="centerCrop"
+            android:contentDescription="Sobre Nosotros" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En Madhouse Barbería, nos dedicamos a ofrecer un servicio excepcional que combina técnicas tradicionales con tendencias modernas."
+            android:textColor="#888888"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

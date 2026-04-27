@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="#2A2A2A"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/panelDerecho">
+
+            <TextView
+                android:id="@+id/tvItemFechaHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2026-04-24 - 5:00 PM"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvItemServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corte de pelo"
+                android:textColor="#CCCCCC"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tvItemBarbero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barbero: Camilo Perez"
+                android:textColor="#AAAAAA"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelDerecho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvItemEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:text="PENDIENTE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:background="#555555" />
+
+            <Button
+                android:id="@+id/btnItemCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Cancelar Cita"
+                android:textSize="10sp"
+                android:textColor="#D32F2F"
+                android:backgroundTint="#00000000"
+                style="?attr/borderlessButtonStyle"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

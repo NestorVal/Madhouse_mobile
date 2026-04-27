@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnVolverPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:textSize="18sp"
+            android:textColor="#121212"
+            android:textStyle="bold"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Perfil"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_background"
+                app:shapeAppearanceOverlay="@style/CircleImage"
+                app:strokeColor="#C69C3B"
+                app:strokeWidth="4dp"
+                android:scaleType="centerCrop" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabSeleccionarFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                app:fabSize="mini"
+                android:src="@android:drawable/ic_menu_camera"
+                app:backgroundTint="#C69C3B" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView android:text="Nombre" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etNombrePerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#E9ECEF" android:padding="10dp" android:layout_marginBottom="15dp"/>
+
+            <TextView android:text="Apellido" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etApellidoPerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#E9ECEF" android:padding="10dp" android:layout_marginBottom="15dp"/>
+
+            <TextView android:text="Correo (No editable)" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etCorreoPerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#D1D1D1" android:padding="10dp" android:enabled="false" android:layout_marginBottom="15dp"/>
+
+            <TextView android:text="Teléfono" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etTelefonoPerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#E9ECEF" android:padding="10dp" android:inputType="phone" android:layout_marginBottom="15dp"/>
+
+            <TextView android:text="Dirección" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etDireccionPerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#E9ECEF" android:padding="10dp" android:layout_marginBottom="15dp"/>
+
+            <TextView android:text="Fecha de Nacimiento" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/etFechaPerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#E9ECEF" android:padding="10dp" android:focusable="false" android:clickable="true" android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/panelBarbero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView android:text="Especialidad" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <EditText android:id="@+id/etEspecialidadPerfil" android:layout_width="match_parent" android:layout_height="50dp" android:background="#E9ECEF" android:padding="10dp" android:layout_marginBottom="15dp"/>
+
+                <TextView android:text="Biografía" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <EditText android:id="@+id/etBioPerfil" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#E9ECEF" android:padding="10dp" android:gravity="top" android:lines="4" android:layout_marginBottom="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="GUARDAR CAMBIOS"
+            android:backgroundTint="#121212"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>

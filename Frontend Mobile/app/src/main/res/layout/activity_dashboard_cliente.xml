@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btnVolverAlInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Volver al inicio"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginBottom="16dp"
+                android:background="?attr/selectableItemBackground"/>
+            <TextView
+                android:id="@+id/tvSaludoCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hola, Cargando..."
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:textSize="26sp"/>
+        </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgFotoDashCliente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            app:strokeColor="#DDDDDD"
+            app:strokeWidth="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardMiPerfil"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <TextView android:text="👤" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#C69C3B"/>
+                <TextView android:text="Mi Perfil" android:textStyle="bold" android:textColor="#121212" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardMisReservas"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <TextView android:text="📅" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#C69C3B"/>
+                <TextView android:text="Mis Reservas" android:textStyle="bold" android:textColor="#121212" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardEditarPerfil"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <TextView android:text="✏️" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Editar Perfil" android:textStyle="bold" android:textColor="#121212" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnCardCerrarSesion"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+                <TextView android:text="🚪" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:text="Cerrar Sesión" android:textStyle="bold" android:textColor="#D32F2F" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnCardFidelizacion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+            <TextView android:text="🎁" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:text="Sistema de Fidelización" android:textStyle="bold" android:textColor="#121212" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próxima cita"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#121212"
+        android:layout_marginBottom="12dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#F3E5F5"
+        app:cardElevation="0dp"> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSinCitasCli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tienes citas programadas."
+            android:textColor="#888888"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/panelDetalleCitaCli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                <TextView android:text="🕒" android:layout_width="24dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="Fecha y hora" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvCitaFechaHoraCli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cargando..." android:textStyle="bold" android:textColor="#121212"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                <TextView android:text="💈" android:layout_width="24dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="Barbero" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvCitaBarberoCli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cargando..." android:textStyle="bold" android:textColor="#121212"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <TextView android:text="✂️" android:layout_width="24dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="Tipo de servicio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="#888888"/>
+                    <TextView android:id="@+id/tvCitaServicioCli" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cargando..." android:textStyle="bold" android:textColor="#121212"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCancelarCitaCli"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="CANCELAR CITA"
+                android:backgroundTint="#212121"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#C69C3B"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="24dp"
+            android:gravity="center_vertical">
+
+            <TextView android:text="🎁" android:textSize="32sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tienes"
+                    android:textColor="#E0E0E0"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tvPuntosCli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="230"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="32sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver beneficios >"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#C69C3B"
+                android:textStyle="bold"
+                app:cornerRadius="50dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</ScrollView>

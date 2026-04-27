@@ -1,0 +1,26 @@
+# ==============================
+# REGLAS PARA ANDROID STUDIO
+# ==============================
+MadhouseMobile/.gradle/
+MadhouseMobile/.idea/
+MadhouseMobile/build/
+MadhouseMobile/app/build/
+MadhouseMobile/local.properties
+MadhouseMobile/*.iml
+
+# ==============================
+# REGLAS PARA SPRING BOOT (BACKEND)
+# ==============================
+Backend_SpringBoot/target/
+Backend_SpringBoot/.mvn/
+Backend_SpringBoot/.idea/
+Backend_SpringBoot/mvnw
+Backend_SpringBoot/mvnw.cmd
+*.class
+
+# ==============================
+# REGLAS GENERALES DEL SISTEMA
+# ==============================
+.DS_Store
+Thumbs.db
+*.log
